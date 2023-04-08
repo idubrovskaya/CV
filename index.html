@@ -15,12 +15,14 @@
         <div class="container_header">
           <nav class="header_navigation">
             <ul>
-              <li><a href="#about">About me</a></li>
-              <li><a href="#contacts">Contacts</a></li>
-              <li><a href="#skills">Skills</a></li>
-              <li><a href="#code">Code example</a></li>
-              <li><a href="#projects">Projects</a></li>
-              <li><a href="#education">Education/Languages</a></li>
+              <li><a href="#about" target="_self">About me</a></li>
+              <li><a href="#contacts" target="_self">Contacts</a></li>
+              <li><a href="#skills" target="_self">Skills</a></li>
+              <li><a href="#code" target="_self">Code example</a></li>
+              <li><a href="#projects" target="_self">Projects</a></li>
+              <li>
+                <a href="#education" target="_self">Education/Languages</a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -44,18 +46,20 @@
                   &#10048;
                 </h1>
                 <h2 class="about-me__job">Frontend Developer</h2>
-                <p class="about-me__description">
-                  Hi there! I'm a highly motivated junior Frontend developer
-                  looking for an opportunity to realize my ambitions in the IT
-                  field. I have experience in creating SPA using React, Redux,
-                  JS, TS, HTML, CSS. I'm planning to study Node.js because my
-                  next focus is to become a Full-Stack Developer. I also
-                  practice written and oral English skills every day by talking
-                  to native speakers, attend courses, watch various movies, read
-                  books. I'm an easy going person, like working both in a team
-                  and by myself, like learning new things, sports and traveling.
-                  I'm a stubborn and a big nerd.
-                </p>
+                <div class="about-me__container">
+                  <p class="about-me__description">
+                    Hi there! I'm a highly motivated junior Frontend developer
+                    looking for an opportunity to realize my ambitions in the IT
+                    field. I have experience in creating SPA using React, Redux,
+                    JS, TS, HTML, CSS. I'm planning to study Node.js because my
+                    next focus is to become a Full-Stack Developer. I also
+                    practice written and oral English skills every day by
+                    talking to native speakers, attend courses, watch various
+                    movies, read books. I'm an easy going person, like working
+                    both in a team and by myself, like learning new things,
+                    sports and traveling. I'm a stubborn and a big nerd.
+                  </p>
+                </div>
               </div>
             </div>
           </section>
@@ -122,6 +126,50 @@
           <section id="projects">
             <div class="container">
               <h2>Projects:</h2>
+              <div class="projects__wrapper">
+                <article class="project__item">
+                  <a
+                    href="https://dubrovskaya-fairy-forest.netlify.app"
+                    class="project__link"
+                    target="_blank"
+                  >
+                    <img
+                      src="./img/fairy_forest.png"
+                      alt="fairy-forest"
+                      class="project__img"
+                    />
+                    <div class="project__content">
+                      <p class="project__subtitle">HTML, CSS, JavaScript</p>
+                      <h3 class="project__title">Fairy forest</h3>
+                      <p class="project__description">
+                        Beautiful landing page with parallax effect.
+                      </p>
+                      <button>See project</button>
+                    </div>
+                  </a>
+                </article>
+                <article class="project__item">
+                  <a
+                    href="https://dubrovskaya-react-pizza.netlify.app/"
+                    class="project__link"
+                    target="_blank"
+                  >
+                    <img
+                      src="./img/pizza.png"
+                      alt="react-pizza"
+                      class="project__img"
+                    />
+                    <div class="project__content">
+                      <p class="project__subtitle">React, Redux, TypeScript</p>
+                      <h3 class="project__title">React Pizza</h3>
+                      <p class="project__description">
+                        Filter, sort, search pizzas for ordering
+                      </p>
+                      <button>See project</button>
+                    </div>
+                  </a>
+                </article>
+              </div>
             </div>
           </section>
 
